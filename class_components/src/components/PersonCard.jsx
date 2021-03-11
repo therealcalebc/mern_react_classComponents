@@ -24,9 +24,7 @@ class PersonCard extends Component {
 		);
 	}
 	incrementAge = () => {
-		let temp = this.state.age;
-		temp++;
-		this.setState({ age: temp });
+		this.setState({ age: this.state.age + 1 });
 	};
 }
 
